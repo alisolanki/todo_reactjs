@@ -4,7 +4,7 @@ import { TodoContext } from './TodoContext';
 
 export default function UpdateTodo() {
     const todoNameRef = useRef();
-    const [todos, setTodos] = useContext(TodoContext);
+    const [, setTodos] = useContext(TodoContext);
     var id = 1;
 
     function addTodo(e) {
@@ -23,7 +23,7 @@ export default function UpdateTodo() {
     }
 
     function clearAll() {
-        setTodos(previousTodos => { return [] });
+        setTodos(_ => { return [] });
     }
 
     return (
