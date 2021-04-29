@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { TodoContext } from './TodoContext';
+import { TodoContext } from '../providers/TodoProvider';
 import Todo from './Todo';
 
 
@@ -7,7 +7,7 @@ export default function TodoList() {
     const [todos,] = useContext(TodoContext);
     return (
         todos.map(todo => {
-            return <Todo key={todo.id} todo={todo} />
+            return <div key={todo.id}><Todo todo={todo} /></div>
         })
     );
 }

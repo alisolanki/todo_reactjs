@@ -1,13 +1,15 @@
 import React from 'react';
-import TodoList from './TodoList';
-import { TodoProvider } from './TodoContext';
-import UpdateTodo from './UpdateTodo';
+import TodoList from './components/TodoList';
+import { TodoProvider } from './providers/TodoProvider';
+import UpdateTodo from './services/UpdateTodo';
+
+import './App.css';
 
 export default function App() {
   return (
     <TodoProvider>
       <div id='title'>
-        <h1>Todo List</h1>
+        <h1>Todo list</h1>
       </div>
       <UpdateTodo />
       <TodoList />

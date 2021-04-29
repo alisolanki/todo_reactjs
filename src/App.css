@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: monospace;
+    text-align: center;
+}
+
+h1 {
+    font-family: Helvetica;
+    color: rgb(98, 0, 255);
+    font-size: 48px;
+}
+
+.todo-component {
+    display: inline-flex;
+    opacity: 1;
+}
+
+.updateTodo {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.updateTodo-button {
+    margin: 5px;
+}
